@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>contact us</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="main">
+    <img src="images/logo_disney_png.png" class="logo" alt="">
+    <h1 class="Titre">Nous sommes à votre écoute</h1>
+    <h1 class="Soustitre">Pour mieux vous orienter , merci de preciser si vous avez besoin d'assistance:</h1>
+
+    <div class="container-faq">
+      <div class="questions">
+        <div class="visible-pannel">
+          <h2 class="">Avant de vous rendre à Disneyland Paris</h2>
+          <img src="images/croix.svg" alt="croix animation">
+        </div>
+        <div class="toggle-pannel">
+          <button type="button" class="btn1" id="Q1resaexistante" name="button">J'ai une question concernant une réservation existante</button>
+          <button type="button" class="btn1" id="Q1questiongenerale" name="button">J' ai une question generale sur votre destination</button>
+          <button type="button" class="btn1" id="Q1handicap" name="button">J'ai des besoins spécifiques liés à un handicap ou une maladie</button>
+
+
+          <!-- Reponse Q1 choix 1 -->
+          <div id="R1resaexistante" style="display:none;">
+            <p class="test"> Pour toute information, confirmation, modification ou annulation de séjour déjà réservé , merci de contacter notre service de Relation Clientèle au numéro de téléphone figurant sur votre lettre de confirmation</p>
+          </div>
+          <!-- Reponse Q2 choix 1 -->
+          <div id="R1questiongenerale" style="display:none;">
+            <p class="test">Pour toute information sur nos offres, question avant séjour, question sur la destination, devis ou réservation, merci de contacter notre Centrale de réservation au: <strong>0 800 300 500</strong><br>
+              Du lundi au vendredi : 9h30 – 19h30* <br>Samedis : 9h30 – 18h* <br>Dimanches : FERME <br><br><em>*Heure française</em>
+              <br><br>Si vous avez des questions pratiques concernant votre séjour,nous vous invitons également à consulter <a href="https://www.disneylandparis.com/fr-fr/faq/">notre centre d'aide</a>
+            </p>
+            <!-- Reponse Q3 choix 1 -->
+          </div>
+          <div id="R1handicap" style="display:none;">
+            <p class="test">Renvoi vers le formulaire GWD</p>
+          </div>
+        </div>
+      </div>
+      <!-- Section 2 -->
+      <div class="questions">
+        <div class="visible-pannel">
+          <h2 class="">Apres votre visite à Disneyland Paris</h2>
+          <img src="images/croix.svg" alt="croix animation">
+        </div>
+        <div class="toggle-pannel">
+          <!-- Choix Apres Visite Niveau A -->
+          <button type="button" class="btn1" id="Q2choixfacture" name="button">J'ai besoin d'une facture acquittée</button>
+          <button type="button" class="btn1" id="Q2choixperdu" name="button">J'ai perdu un objet pendant ma visite</button>
+          <button type="button" class="btn1" id="Q2choixpartage" name="button">Je souhaite partager mon expérience</button>
+          <button type="button" class="btn1" id="Q2choixreclamation" name="button">je souhaite vous adresser une reclamation</button>
+          <!-- Reponse avchoixfacture -->
+          <div id="R2choixfacture" style="display:none;">
+            <p class="test">Si vous souhaitez recevoir une facture acquittée suite à un séjour, une visite ou un achat à Disneyland Paris, nous vous invitons à nous contacter à l’adresse suivante <strong>DLP.FACTURE.ACQUITTEE@disney.com </strong>en
+              communiquant vos nom, prénom, adresse postale et votre numéro de réservation (si votre demande est liée à un séjour) et/ou le ticket qui vous a été remis lors de la transaction.</p>
+          </div>
+          <!-- Reponse avchoixperdu -->
+          <div id="R2choixperdu" style="display:none;">
+            <p class="test">Si vous avez égaré un objet personnel lors de votre visite dans nos parcs, vous pouvez contacter notre service Objets Trouvés en cliquant ici : <a
+                href="mailto:Dlp.objets.trouves@disney.com?">Dlp.objets.trouves@disney.com</a></p>
+          </div>
+          <!-- DEBUT Choix apresvisite Niveau 2 Partage experience -->
+          <div id="R2niveau2choixexperience" style="display:none;">
+            <p class="test"><strong>Ces beaux souvenirs nous les créons ensemble.</strong>
+              <br>En nous partageant vos attentes et ressentis,vous nous permettez d'améliorer votre expérience dans notre destination
+            </p>
+            <p class="test2"><strong>Selectionnez votre choix:</strong></p>
+            <button type="button" class="btn1" id="Q1choixpartagecompliment" name="button">Je souhaite faire un compliment</button>
+            <button type="button" class="btn1" id="Q2choixpartagesuggestion" name="button">Je souhaite apporter un avis/une suggestion</button>
+
+            <!--COORDONNEECHILD PARTAGER EXPERIENCE-->
+          </div>
+
+          <div id="R2niveau2choixexperienceinfo" style="display:none;">
+            <p class="test3">Votre demande:</p>
+            <p class="test0"><strong>En quelques mots, quel est le sujet principal de votre requête ?</strong></p>
+            <textarea class="champ2"name="name" rows="1" cols="80" placeholder="Ex. Compliment castmember  "></textarea>
+            <p class="test0"><strong>Pouvez-vous nous en dire plus?</strong></p>
+            <textarea name="name"class="champ2" rows="4" cols="80"></textarea>
+            <p class="test1">Vous pouvez compléter votre demande en y ajoutant des pièces jointes </p>
+            <input type="file" name="" value="">
+            <p class="test3">Vos coordonnées:</p>
+            <input class="champ" type="text" name="" value="" placeholder="Civilité">
+            <br>
+            <input class="champ" type="text" name="" value="" placeholder="Nom">
+            <input class="champ" type="text" name="" value="" placeholder="Prenom">
+            <p class="test4">Addresse </p>
+
+            <input class="champ" type="text" name="" value="" placeholder="Rue">
+            <input class="champ" type="text" name="" value="" placeholder="Numero">
+            <br>
+            <input class="champ" type="text" name="" value="" placeholder="Code Postal">
+            <input class="champ" type="text" name="" value="" placeholder="Ville"><br>
+            <input class="champ" type="text" name="" value="" placeholder="Pays">
+            <p class="test4">Contact </p>
+            <input class="champ" type="email" name="" value="" placeholder="Adresse email">
+            <input class="champ" type="text" name="" value="" placeholder="N°de telephone">
+            <br>
+            <input type="button" class="btn2" name="" value="Envoyer">
+          </div>
+
+
+          <!-- DEBUT Choix apresvisite Niveau 2 Reclamation-->
+          <div id="R2niveau2introreclamation" style="display:none;">
+            <p class="test">Nous nous engageons au quotidien à rendre votre expérience parmi nous inoubliable.Si nous n’avons pas su vous donner entière satisfaction, merci de nous faire part de vos réclamations.
+            </p>
+            <p class="test2"><strong>Selectionnez votre choix:</strong></p>
+            <button type="button" class="btn1" id="Q1choixreclamationnew" name="button">Je souhaite vous faire part d'une nouvelle réclamation</button>
+            <button type="button" class="btn1" id="Q1choixreclamationpast" name="button">Je relance une réclamation existante</button>
+            <button type="button" class="btn1" id="Q1choixMediateur" name="button">La réponse à ma réclamation ne me satisfait pas</button>
+            <!--FIN CHOIX PARENT RECLAMATION-->
+            <!--DEBUT CHOIX CHILD Q2D1 RECLAMATION-->
+            <div id="Q1Claimnewplace" style="display:none;">
+              <p class="test2"><strong>Dans quel cadre nous avez-vous rendu visite ?</strong></p>
+              <button type="button" class="btn1" id="Q1Claimnewplacehotel" name="button">J'ai séjourné dans l'un de vos hotels</button>
+              <button type="button" class="btn1" id="Q1Claimnewplaceparks" name="button">J'ai visité le(s) Parc(s) uniquement</button>
+              <button type="button" class="btn1" id="Q1ClaimnewplaceDV" name="button">Je me suis rendu(e) au Disney Village uniquement</button>
+            </div>
+            <!--Block reclamtion info supplementaires hotel-->
+            <div id="R1Claimnewbookinginfohotel" style="display:none">
+              <p class="test2">Merci de reinsegner les informations suivantes:</p>
+              <input type="text" name="" class="champ"value="" placeholder="Nom de l'hotel où vous avez sejourné"> <br>
+              <input type="text" name="" value="" class="champ" placeholder="N° de reservation">
+            </div>
+            <!--Block reclamtion info supplementaires park-->
+            <div id="R1Claimnewbookinginfoparks" style="display:none">
+              <p class="test2">Merci de reinsegner les informations suivantes:</p>
+              <input type="text" class="champ"name="" value="" placeholder="Nombre de billets concernés"> <br>
+              <input type="text" class="champ"name="" value="" placeholder="N° de reservation">
+              <p class="test"><strong>Important:</strong>Pour permettre le traitement de votre dossier, il est <strong>nécessaire</strong> de joindre une photo recto-verso de chacun des billets Parcs. Ces éléments nous sont
+                <strong>indispensables</strong> afin de vous apporter une réponse.
+              </p>
+            </div>
+            <!--COORDONNEECHILD Reclamation et DV-->
+            <div id="R1Claimclientinfo" style="display:none;">
+              <p class="test3">Votre demande:</p>
+              <p class="test0"><strong>En quelques mots, quel est le sujet principal de votre requête ?</strong></p>
+              <textarea name="name"class="champ2" rows="1" cols="80" placeholder="Ex.Probleme propreté"></textarea>
+              <p class="test0"><strong>Pouvez-vous nous en dire plus?</strong></p>
+              <textarea class="champ2" name="name" rows="4" cols="80"></textarea>
+              <p class="test1">Vous pouvez compléter votre demande en y ajoutant des pièces jointes </p>
+              <input type="file" name="" value="">
+              <p class="test3">Vos coordonnées:</p>
+              <input class="champ" type="text" name="" value="" placeholder="Civilité"><br>
+              <input class="champ" type="text" name="" value="" placeholder="Nom">
+              <input class="champ" type="text" name="" value="" placeholder="Prenom">
+
+              <p class="test4">Addresse </p>
+              <input class="champ" type="text" name="" value="" placeholder="Rue">
+              <input class="champ" type="text" name="" value="" placeholder="Numero">
+              <br>
+              <input class="champ" type="text" name="" value="" placeholder="Code Postal">
+              <input class="champ" type="text" name="" value="" placeholder="Ville"><br>
+              <input class="champ" type="text" name="" value="" placeholder="Pays">
+              <p class="test4">Contact </p>
+              <input class="champ" type="email" name="" value="" placeholder="Adresse email">
+              <input class="champ" type="text" name="" value="" placeholder="N°de telephone">
+              <br>
+              <input type="button" class="btn2" name="" value="Envoyer">
+            </div>
+            <!--ReponseReclamation Mediateur-->
+            <div id="R1choixMediateur" style="display:none;">
+              <p class="test">En cas de réclamation n’ayant pas donné lieu à une réponse satisfaisante dans un délai de 60 jours, vous avez la possibilité de saisir le Médiateur du Tourisme et du Voyage, dont les coordonnées et modalités de saisine
+                peuvent être obtenues en consultant son site Internet : <a href="mailto:http://www.mtv.travel?">http://www.mtv.travel</a>. Pour le règlement des litiges relatifs à des transactions en ligne, vous pouvez vous rendre sur la
+                plate-forme mise en place par la Commission européenne
+                à l’adresse suivante :<a href="http://ec.europa.eu/odr/">http://ec.europa.eu/odr/</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- boutiques-->
+      <div class="questions">
+        <div class="visible-pannel">
+          <h2 class="">Suite à l'achat dans l'une de nos boutiques</h2>
+          <img src="images/croix.svg" alt="croix animation">
+
+        </div>
+        <div class="toggle-pannel">
+          <button type="button" class="btn1" id="Echangeshop" name="button">Je souhaite échanger un article"</button>
+          <button type="button" class="btn1" id="Defectshop" name="button">L'article que j'ai acheté est défectueux et/ou abimé</button>
+          <button type="button" class="btn1" id="Antivolshop" name="button">L'antivol est toujours présent sur l'article que j'ai acheté</button>
+          <button type="button" class="btn1" id="Photopass" name="button">J'ai besoin d'aide concernant le Photopass</button>
+
+
+          <!-- Reponse boutique Echange -->
+          <div id="Echangeshop1" style="display:none;">
+            <p class="test">.</p>
+          </div>
+          <!-- Reponse boutique Defectuex -->
+          <div id="Defectshop1" style="display:none;">
+            <p class="test">Pour permettre le traitement de votre dossier, <strong>il est nécessaire</strong> de joindre une photo de l’article défectueux et la copie de votre ticket de caisse. Ces éléments nous sont <strong>indispensables</strong>
+              afin de vous apporter une réponse.</p>
+          </div>
+
+          <!-- Reponse boutique Antivol -->
+          <div id="Antivolshop1" style="display:none;">
+            <p class="test"> Pour permettre le traitement de votre dossier, <strong>il est nécessaire </strong>de joindre une photo de l’article avec l’antivol visible et la copie de votre ticket de caisse. Ces éléments nous sont
+              <strong>indispensables</strong> afin de vous apporter une réponse.
+            </p>
+          </div>
+          <!-- Reponse boutique Photopass -->
+          <div id="Photopass1" style="display:none;">
+            <p class="test">Pour toutes questions relatives à PhotoPass+, vous pouvez utilisez l’adresse suivante : <a href="mailto:dlp.photopass@disney.com">dlp.photopass@disney.com</a></p>
+          </div>
+
+          <!--coordonnées -->
+          <div id="R1boutiqueclientinfo" style="display:none;">
+            <p class="test3">Votre demande:</p>
+            <p class="test0"><strong>En quelques mots, quel est le sujet principal de votre requête ?</strong></p>
+            <textarea name="name" rows="1" class="champ2" cols="80" placeholder="Ex.Demande échange peluche"></textarea>
+            <p class="test0"><strong>Pouvez-vous nous en dire plus?</strong></p>
+            <textarea name="name" class="champ2"rows="4" cols="80"></textarea>
+            <p class="test1">Vous pouvez compléter votre demande en y ajoutant des pièces jointes </p>
+            <input type="file" name="" value="">
+            <p class="test3">Vos coordonnées:</p>
+            <input class="champ" type="text" name="" value="" placeholder="Civilité">
+            <br>
+            <input class="champ" type="text" name="" value="" placeholder="Nom">
+            <input class="champ" type="text" name="" value="" placeholder="Prenom">
+
+            <p class="test4">Addresse </p>
+            <input class="champ" type="text" name="" value="" placeholder="Rue">
+            <input class="champ" type="text" name="" value="" placeholder="Numero">
+            <br>
+            <input class="champ" type="text" name="" value="" placeholder="Code Postal">
+            <input class="champ" type="text" name="" value="" placeholder="Ville"><br>
+            <input class="champ" type="text" name="" value="" placeholder="Pays">
+            <p class="test4">Contact </p>
+            <input class="champ" type="email" name="" value="" placeholder="Adresse email">
+            <input class="champ" type="text" name="" value="" placeholder="N°de telephone">
+            <br>
+            <input type="button" class="btn2" name="" value="Envoyer">
+          </div>
+        </div>
+        </div>
+        <!--fin coordonnées -->
+        <!-- Autres contacts-->
+        <div class="questions">
+          <div class="visible-pannel">
+            <h2 class="">Sans lien avec une visite</h2>
+            <img src="images/croix.svg" alt="croix animation">
+
+          </div>
+          <div class="toggle-pannel">
+            <button type="button" class="btn1" id="Jobhunt" name="button">Je souhaite postuler à Disneyland Paris</button>
+            <button type="button" class="btn1" id="Tombola" name="button">Je souhaite recevoir des lots ou des objets publicitaires</button>
+
+
+            <!-- Reponse Recrutement -->
+            <div id="Jobhunt1" style="display:none;">
+              <p class="test">Pour consulter les offres de recrutement de Disneyland Paris ou déposer votre candidature , un site dédié est mis à votre disposition. <a
+                  href="https://emplois.disneycareers.com/l%E2%80%99emploi-%C3%A0-disneyland-paris">Cliquez ici </a></p>
+            </div>
+            <!-- Reponse Lots Tombola -->
+            <div id="Tombola1" style="display:none;">
+              <p class="test">Vous souhaitez recevoir des lots et/ou objets publicitaires. Disneyland Paris ne dispose pas d'objets publicitaires et de lots à envoyer à la clientèle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--fin-->
+      </div>
+
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js">
+      </script>
+
+      <script src="script/script.js">
+
+      </script>
+</body>
+
+</html>
